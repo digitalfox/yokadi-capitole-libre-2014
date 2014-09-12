@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js - Barebones</title>
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
+	<link rel="stylesheet" href="css/fox.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<section>
+				<h1>yokadi</h1>
+				<p>Not your grandma todolist</p>				
+				<aside class="notes">
+				bonjour et merci d'être là pour cette présentation consacrée à un outil de gestion de tâche pas comme les autres : Yokadi<br/>
+				</aside>
+			</section>
+			<section>
+				<h1>À propos...</h1>
+				<ul>
+				  <li><strong>Sébastien Renard</strong></li>
+				  <li>Traduction KDE</li>
+				  <li>Développeur python</li>
+				  <img src="img/enioka.png"/ style="background:none;border:none;box-shadow:none;width:70%;">
+				</ul>
+				<aside class="notes">
+				Hacker de longue date, contributeur KDE depuis plus de 12 ans<br/>
+				Développeur de plusieurs logiciels libres. Principaux : Pysql, Pydici et  Yokadi<br/>
+				Vie pro : directeur général d'une société de conseil en architecture des systèmes d'information. On recrute :-)
+				</aside>
+			</section>
+			<section data-background="img/gtd.jpg">
+				  <h3 style="background-color:rgba(0,0,0,0.8); border-radius:5px; width:100%; padding:10px;">Getting things done !</h3>
+				  <aside class="notes">
+				    Yokadi suit, plus ou moins, les principes de Getting things done. <br/>
+				    Getting things done. Livre de XXXXXX<br/>
+				    Objectif efficacité et sérénité. Ne pas oublier, ne pas stresser... et ne pas passer pour un balletringue auprès de ses proches<br/>
+				  </aside>
+			</section>
+			<section>
+				<h2>Getting things done ?</h2>
+				<ul>
+				    <li class="fragment">Faire tout de suite...</li>
+				    <li class="fragment">Déléguer...</li>
+				    <li class="fragment">Noter qu'il faudra le faire plus tard !</li>
+				</ul>
+
+				<aside class="notes">
+				En résumé, c'est quoi Getting things done ? <br/>
+				Quand on vous sollicite, ou que vous vous rendez compte qu'il faut faire quelque chose, Getting Things Done, propose trois réactions : <br/>
+				
+				Faire tout de suite. Quand la tache est courte et simple, inutile d'attendre, inutile de le noter, inutile de s'encombrer l'esprit. Il faut le faire de suite.<br/>
+				
+				Déléguer... La tâche peut-elle être faite pour un autre ? Alors il faut déléguer... Mais déléguer != oublier. Il faut tracer et vérifier.<br/>
+				
+				Noter qu'il faudra le faire plus tard... Quoi, pour qui, avec qui, quelle urgence, quand
+				
+				</aside>
+			</section>
+			<section>
+				<h2>Qu'est-ce ?</h2>
+				<ul>
+				    <li class="fragment">Geek</li>
+				    <li class="fragment">Efficace</li>
+				    <li class="fragment">Libre</li>
+				</ul>
+
+				<aside class="notes">
+				Geek : Ligne de commande, scriptable. De loin ça ressemble à un truc cryptique. <br/>
+				Efficace : pas de froufrou, tout est conçu pour être rapide, facile et fonctionnel<br/>
+				Libre : GPL v3. Source disponibles sur github
+				</aside>
+			</section>
+			<section>
+				<h2>Pourquoi ?</h2>
+				<p>hellelo</p>
+				<aside class="notes">
+				blabla notes p3
+				</aside>
+			</section>
+
+		</div>
+
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+
+		Reveal.initialize({
+		    dependencies: [
+			// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+			//{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+			// Interpret Markdown in <section> elements
+ 			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ 			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ 
+			// Syntax highlight for <code> elements
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+			// Zoom in and out with Alt+click
+			//{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+			// Speaker notes
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+			// Remote control your reveal.js presentation using a touch device
+ 			//{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+		    ]
+});
+
+	</script>
+
+</body>
+</html>
