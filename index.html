@@ -63,11 +63,10 @@
 				Déléguer... La tâche peut-elle être faite pour un autre ? Alors il faut déléguer... Mais déléguer != oublier. Il faut tracer et vérifier.<br/>
 				
 				Noter qu'il faudra le faire plus tard... Quoi, pour qui, avec qui, quelle urgence, quand
-				
 				</aside>
 			</section>
 			<section>
-				<h2>Qu'est-ce ?</h2>
+				<h2>Yet another todo list manager ?</h2>
 				<ul>
 				    <li class="fragment">Geek</li>
 				    <li class="fragment">Efficace</li>
@@ -75,19 +74,85 @@
 				</ul>
 
 				<aside class="notes">
-				Geek : Ligne de commande, scriptable. De loin ça ressemble à un truc cryptique. <br/>
+				En quoi Yokadi est-il différents des milliers d'outils qui font déjà ça ?
+				Geek : Ligne de commande, scriptable. De loin ça ressemble à un truc cryptique ;-) <br/>
 				Efficace : pas de froufrou, tout est conçu pour être rapide, facile et fonctionnel<br/>
 				Libre : GPL v3. Source disponibles sur github
 				</aside>
 			</section>
 			<section>
-				<h2>Pourquoi ?</h2>
-				<p>hellelo</p>
+				<h2>Démarrage rapide</h2>
+				<pre><code data-noescape>
+<span  class="fragment">yokadi> t_add courses acheter du beurre</span>
+
+<span  class="fragment">yokadi> t_list</span>
+
+<span  class="fragment">                     <strong>courses</strong>                         
+ID|Title            |U  |S|Age     |Due date                  
+--------------------------------------------------
+ 1|acheter du beurre|60 |N|0m      |                          </span>
+				</code></pre>
 				<aside class="notes">
-				blabla notes p3
+				ajout d'une tâche dans un projet</br>
+				lister les tâches
 				</aside>
 			</section>
+			<section>
+			<h2>Contexte</h2>
+			<ul>
+			  <li class="fragment">Personnes</li>
+			  <li class="fragment">Lieux</li>
+			  <li class="fragment">Type de tâche</li>
+			</ul>
+			<aside class="notes">
+			Les contextes permettent de classer les tâches et faciliter leur recherche. Les principaux types de Contexte sont :<br/>
+			- les personnes : liées à la tâches, qui sont à l'origine de la demande, ou qui sont responsables de la tâches (pour suivre les tâches des autres !)<br/>
+			- les lieux associées aux tâches : maison, boulot, métro, dodo ... <br/>
+			- le type de tâche : rapide à faire, qui demande du calme, à trier<br/>
+			La limite est votre imagination. Chaque tâche peut bien entendu cumuler autant de Contextes que l'on veut
+			</aside>
+			</section>
+			<section>
+				<h2>Contexte</h2>
+				<pre><code data-noescape>
+<span  class="fragment">yokadi> t_add capitole_du_libre relecture présentation yokadi @ben</span>
 
+<span  class="fragment">yokadi> t_list <strong>@ben</strong></span>
+
+<span  class="fragment">                              <strong>capitole_du_libre</strong>                                
+ID|Title                              |U  |S|Age     |Due date                  
+--------------------------------------------------------------------------
+8 |relecture présentation yokadi <strong>(ben)</strong>|0  |N|0m      |                          
+				</code></pre>
+				<aside class="notes">
+				
+				</aside>
+			</section>
+			<section>
+			    Description longue
+			    <aside class="notes">
+			      Une fonctionnalité souvent manquante dans les outils en ligne de commande. Très utile. Exemples<br/>
+			      - détail des courses<br/>
+			      - le contenu d'un prochain article de blog<br/>
+			      - un compte rendu de réunion<br/>
+			      - une grosse stack trace bien dégueulasse de 30 mètres de long à analyser<br/>
+			    </aside>
+			</section>
+			<section>
+			    Dates d'échéance
+			</section>
+			<section>
+			    Notes
+			</section>
+			<section>
+			    Organisation des tâches en projets
+			</section>
+			<section>
+			    Urgence
+			</section>
+			<section>
+			    Chiffrement
+			</section>
 		</div>
 
 	</div>
