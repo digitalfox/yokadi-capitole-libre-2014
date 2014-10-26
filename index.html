@@ -25,7 +25,7 @@
 				</aside>
 			</section>
 			<section>
-				<h1>À propos...</h1>
+				<h2>À propos...</h2>
 				<ul>
 				  <li><strong>Sébastien Renard</strong></li>
 				  <li>Traduction KDE</li>
@@ -81,7 +81,7 @@
 				</aside>
 			</section>
 			<section>
-				<h2>Démarrage rapide</h2>
+				Démarrage rapide !
 				<pre><code data-noescape>
 <span  class="fragment">yokadi> t_add courses acheter du beurre</span>
 
@@ -113,16 +113,16 @@ ID|Title            |U  |S|Age     |Due date
 			</aside>
 			</section>
 			<section>
-				<h2>Contexte</h2>
+				Contexte
 				<pre><code data-noescape>
-<span  class="fragment">yokadi> t_add capitole_du_libre relecture présentation yokadi @ben</span>
+<span class="fragment">yokadi> t_add capitole_du_libre relecture présentation yokadi <span style="color:cyan">@ben</span></span>
 
-<span  class="fragment">yokadi> t_list <strong>@ben</strong></span>
+<span class="fragment">yokadi> t_list <span style="color:cyan">@ben</span></span>
 
-<span  class="fragment">                              <strong>capitole_du_libre</strong>                                
+<span class="fragment">                              <strong>capitole_du_libre</strong>                                
 ID|Title                              |U  |S|Age     |Due date                  
 --------------------------------------------------------------------------
-8 |relecture présentation yokadi <strong>(ben)</strong>|0  |N|0m      |                          
+8 |relecture présentation yokadi <span style="color:cyan">(ben)</span>|0  |N|0m      |                          
 				</code></pre>
 				<aside class="notes">
 				
@@ -139,7 +139,11 @@ ID|Title                              |U  |S|Age     |Due date
 			    </aside>
 			</section>
 			<section>
-			    Dates d'échéance
+			  Dates d'échéance
+			    <pre><code data-noescape>
+yokadi> t_due 12 <span style="color:cyan;">+3d</span>
+Due date for task 'relecture prés. yokadi' set to Mon Nov 15 20:30 2014
+ </code></pre>
 			</section>
 			<section>
 			    Notes
@@ -152,6 +156,65 @@ ID|Title                              |U  |S|Age     |Due date
 			</section>
 			<section>
 			    Chiffrement
+			</section>
+			<section>
+			    <h2>Alias</h2>
+<table>
+<tr><td>a</td><td>t_add</td></tr>
+<tr><td>nl</td><td>n_list</td></tr>
+<tr><td>d</td><td>t_mark_done</td></tr>
+<tr><td>procrastinate</td><td>t_apply __ t_due +1d</td></tr>
+<tr><td>lo</td><td>t_list --overdue</td></tr>
+<tr><td>l</td><td>t_list</td></tr>
+<tr><td>na</td><td>n_add --desc</td></tr>
+<tr><td>cr</td><td>n_list @cr</td></tr>
+<tr><td>today</td><td>t_list --due=&lt;tomorrow</td></tr>
+<tr><td>desc</td><td>t_describe</td></tr>
+</table>
+			</section>
+			<section>
+			    <h2>Bug tracking</h2>
+			    <pre><code data-noescape>
+<span class="fragment">yokadi> <span style="color:cyan">bug_add</span> yokadi lock error problably due to timeout when editing
+a task description during high I/O load</span>
+<span class="fragment">1: Documentation
+2: Localization
+3: Aesthetic issues
+4: Balancing: Enables degenerate usage strategies that harm the experience
+5: Minor usability: Impairs usability in secondary scenarios
+6: Major usability: Impairs usability in key scenarios
+7: Crash: Bug causes crash or data loss. Asserts in the Debug release
+Severity: <strong><span style="color:cyan">6</span></strong></span>
+<span class="fragment">1: Will affect almost no one
+2: Will only affect a few users
+3: Will affect average number of users
+4: Will affect most users
+5: Will affect all users
+Likelihood: <span style="color:cyan">3</span></span>                                                                                                                                                                                                                            
+<span class="fragment">bug: <span style="color:cyan">456</span></span>
+<span class="fragment">Added bug 'lock error problably due to timeout when editing a task
+description during high I/O load' (id=9, urgency=51)</span>
+			    </code></pre>
+			</section>
+			<section>
+			  <h2>Bug tracking</h2>
+<pre><code>yokadi> <span style="color:cyan">9</span>
+   Project: yokadi
+     Title: lock error problably due to timeout when editing a task description during high I/O load
+        ID: 9
+   Created: 2014-09-12 20:04:00
+       Due: None
+    Status: new
+   Urgency: 51
+Recurrence: None
+  Keywords: _bug=456, _likelihood=3, _severity=6</code></pre>
+			</section>
+			<section>
+			  Confidentiel ?
+			  <ul>
+			    <li class="fragment">~1000 téléchargement des sources par mois</li>
+			    <li class="fragment">40 installations par mois sur Debian</li>
+			 </ul>
 			</section>
 		</div>
 
