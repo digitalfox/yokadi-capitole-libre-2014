@@ -42,7 +42,7 @@
 				  <h3 style="background-color:rgba(0,0,0,0.8); border-radius:5px; width:100%; padding:10px;">Getting things done !</h3>
 				  <aside class="notes">
 				    Yokadi suit, plus ou moins, les principes de Getting things done. <br/>
-				    Getting things done. Livre de XXXXXX<br/>
+				    Getting things done. Livre de David Allen publié en 2002<br/>
 				    Objectif efficacité et sérénité. Ne pas oublier, ne pas stresser... et ne pas passer pour un balletringue auprès de ses proches<br/>
 				  </aside>
 			</section>
@@ -55,7 +55,7 @@
 				</ul>
 
 				<aside class="notes">
-				En résumé, c'est quoi Getting things done ? <br/>
+				En résumé, c'est quoi Getting things done ? Pas besoin de lire le livre, je vous fais une synthèse<br/>
 				Quand on vous sollicite, ou que vous vous rendez compte qu'il faut faire quelque chose, Getting Things Done, propose trois réactions : <br/>
 				
 				Faire tout de suite. Quand la tache est courte et simple, inutile d'attendre, inutile de le noter, inutile de s'encombrer l'esprit. Il faut le faire de suite.<br/>
@@ -74,7 +74,7 @@
 				</ul>
 
 				<aside class="notes">
-				En quoi Yokadi est-il différents des milliers d'outils qui font déjà ça ?
+				En quoi Yokadi est-il différents des milliers d'outils qui font déjà ça ?<br/>
 				Geek : Ligne de commande, scriptable. De loin ça ressemble à un truc cryptique ;-) <br/>
 				Efficace : pas de froufrou, tout est conçu pour être rapide, facile et fonctionnel<br/>
 				Libre : GPL v3. Source disponibles sur github
@@ -147,12 +147,40 @@ Due date for task 'relecture prés. yokadi' set to Mon Nov 15 20:30 2014
 			</section>
 			<section>
 			    Notes
+			    <aside class="notes">
+			      Yokadi ne gère pas que des tâches. Des notes aussi.<br/>
+			      Exemples : <br/>
+			      - liste de courses <br/>
+			      - compte-rendu de réunion <br/>
+			    </aside>
 			</section>
 			<section>
 			    Organisation des tâches en projets
+			    <pre><code data-noescape>
+yokadi> t_list
+                              <span style="color:cyan;">capitole_du_libre</span>                                                                                                                   
+ID  |Title                                  |U |S|Age     |Due date                  
+-----------------------------------------------------------------------
+2403|Finir la prés. yokadi, arrhhh (<span style="color:cyan;">pres</span>) ! |30|N|5w, 5d  |15/11/2014
+2404|Finir prés. KDE Plasma 5 (<span style="color:cyan;">pres, kde</span>)   |30|N|5w, 5d  |15/11/2014
+
+                             <span style="color:cyan;">mon_super_projet</span>                                                             
+ID  |Title                                  |U |S|Age     |Due date                  
+-----------------------------------------------------------------------
+2420|faire le point avec Patrick (<span style="color:cyan;">reunion</span>)  |50|N|2w, 2d  |<span style="color:red;">10/11/2014</span>
+2423|faire propal pour audit de XXX (<span style="color:cyan;">propal)</span>|80|N|2w, 2d  |<span style="color:red;">14/11/2014</span>
+ </code></pre>
+			      <aside class="notes">
+				Pour ranger le fatras, on classe les tâches en projet <br/>
+				Et en sous projet <br/>
+			      </aside>
 			</section>
 			<section>
 			    Urgence
+			    <aside class="notes">
+			      Un autre concept de getting things done.<br/>
+			      On ne traite pas les tâches dans l'ordre ou elles arrivent mais dans l'ordre de priorité !
+			     </aside>
 			</section>
 			<section>
 			    Chiffrement
